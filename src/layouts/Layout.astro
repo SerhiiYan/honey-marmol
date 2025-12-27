@@ -1,0 +1,63 @@
+---
+// src/layouts/Layout.astro
+import '../styles/global.css';
+import CartWidget from '../components/CartWidget.jsx';
+
+interface Props {
+	title: string;
+    description?: string;
+}
+
+const { title, description = "Авторский мёд ручной работы Marmol" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-brand-dark text-white min-h-screen flex flex-col">
+        
+        <!-- Шапка (Header) - Сделаем её липкой -->
+        <header class="sticky top-0 z-50 w-full border-b border-white/10 bg-brand-dark/80 backdrop-blur-md">
+            <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+                
+                <!-- Логотип (Слева) -->
+                <a href="/" class="flex flex-col leading-none uppercase font-heading font-bold text-xl tracking-tighter hover:opacity-80 transition">
+                    Marmol
+                    <span class="text-brand-yellow text-sm">Honey</span>
+                </a>
+
+                <!-- Навигация (Центр - скрыта на мобильных) -->
+                <nav class="hidden md:flex gap-8 text-sm font-medium tracking-wide text-gray-300">
+                    <a href="/" class="hover:text-brand-yellow transition-colors">Главная</a>
+                    <a href="/catalog" class="hover:text-brand-yellow transition-colors">Каталог</a>
+                    <a href="/about" class="hover:text-brand-yellow transition-colors">О нас</a>
+                </nav>
+
+                <!-- Корзина (Справа) -->
+                <div>
+                    <!-- client:load говорит Astro, что этот компонент нужно оживить JS-ом сразу -->
+                    <CartWidget client:load />
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Контент страницы -->
+		<main class="flex-grow">
+			<slot /> 
+		</main>
+
+        <!-- Футер -->
+        <footer class="border-t border-white/10 py-8 text-center text-gray-500 text-sm">
+            © 2025 Marmol Honey. Все права защищены.
+        </footer>
+
+	</body>
+</html>

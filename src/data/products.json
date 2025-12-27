@@ -1,0 +1,100 @@
+[
+  {
+    "id": "classic-may",
+    "category": "honey",
+    "name": "Мёд Майский",
+    "description": "Первый весенний мёд. Нежный, светлый, с легким ароматом весенних цветов.",
+    "image": "/images/honey-linden.png",
+    "badges": ["Новинка"],
+    "variants": [
+      { "size": "300 г", "price": 10 },
+      { "size": "500 г", "price": 16 },
+      { "size": "900 г", "price": 27 }
+    ]
+  },
+  {
+    "id": "classic-buckwheat",
+    "category": "honey",
+    "name": "Мёд Гречишный",
+    "description": "Темный, терпкий, с насыщенным вкусом и богатым составом железа.",
+    "image": "/images/honey-linden.png",
+    "badges": ["Классика"],
+    "variants": [
+      { "size": "300 г", "price": 11 },
+      { "size": "500 г", "price": 18 },
+      { "size": "900 г", "price": 30 }
+    ]
+  },
+  {
+    "id": "nuts-mix",
+    "category": "nuts",
+    "name": "Мёд микс орехов",
+    "description": "Полезное лакомство: фундук, миндаль, грецкий орех в натуральном акациевом меду.",
+    "image": "/images/honey-linden.png",
+    "badges": ["Хит продаж"],
+    "variants": [
+      { "size": "300 г", "price": 18 },
+      { "size": "500 г", "price": 30 }
+    ]
+  },
+  {
+    "id": "nuts-cedar",
+    "category": "nuts",
+    "name": "Мёд с кедровым орехом",
+    "description": "Элитное сочетание. Сибирский кедровый орех в сладком меду.",
+    "image": "/images/honey-linden.png",
+    "badges": ["Премиум"],
+    "variants": [
+      { "size": "300 г", "price": 25 },
+      { "size": "500 г", "price": 40 }
+    ]
+  },
+  {
+    "id": "cream-classic",
+    "category": "cream",
+    "name": "Крем-мёд классический",
+    "description": "Взбитый по особой технологии мёд. Кремовая текстура, тает во рту, не кристаллизуется.",
+    "image": "/images/honey-linden.png",
+    "badges": [],
+    "variants": [
+      { "size": "270 г", "price": 12 },
+      { "size": "440 г", "price": 20 }
+    ]
+  },
+  {
+    "id": "cream-berry",
+    "category": "cream",
+    "name": "Крем-мёд с черной смородиной",
+    "description": "Яркий ягодный вкус с приятной кислинкой. Витаминный заряд.",
+    "image": "/images/honey-linden.png",
+    "badges": [],
+    "variants": [
+      { "size": "270 г", "price": 12 },
+      { "size": "440 г", "price": 20 }
+    ]
+  },
+  {
+    "id": "bee-perga",
+    "category": "bee-products",
+    "name": "Перга пчелиная",
+    "description": "Природный биостимулятор. Пчелиный хлеб, богатый белками и витаминами.",
+    "image": "/images/honey-linden.png",
+    "badges": ["Суперфуд"],
+    "variants": [
+      { "size": "150 г", "price": 20 },
+      { "size": "250 г", "price": 38 },
+      { "size": "450 г", "price": 65 }
+    ]
+  },
+  {
+    "id": "tea-assort",
+    "category": "tea",
+    "name": "Чай в ассортименте",
+    "description": "Травяной сбор, идеально дополняющий вкус нашего меда.",
+    "image": "/images/honey-linden.png",
+    "badges": [],
+    "variants": [
+      { "size": "40 г", "price": 10 }
+    ]
+  }
+]
