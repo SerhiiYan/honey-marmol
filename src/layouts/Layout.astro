@@ -2,6 +2,7 @@
 // src/layouts/Layout.astro
 import '../styles/global.css';
 import CartWidget from '../components/CartWidget.jsx';
+import CartFlyout from '../components/CartFlyout.jsx';
 
 interface Props {
 	title: string;
@@ -58,6 +59,6 @@ const { title, description = "Авторский мёд ручной работ�
         <footer class="border-t border-white/10 py-8 text-center text-gray-500 text-sm">
             © 2025 Marmol Honey. Все права защищены.
         </footer>
-
+        <CartFlyout client:load />
 	</body>
 </html>
