@@ -17,7 +17,7 @@
     "category": "honey",
     "name": "Мёд Майский",
     "description": "Первый, самый нежный мёд сезона. Легкий, почти прозрачный, с тонкими нотками весенних первоцветов и фруктовых деревьев.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/honey-may.png",
     "badges": ["Новинка"],
     "variants": [
       { "size": "300 г", "price": 10 },
@@ -30,7 +30,7 @@
     "category": "honey",
     "name": "Мёд Лесной",
     "description": "Темный, тягучий, с глубоким терпким вкусом и хвойными нотками. Впитал в себя силу дикой природы.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/honey-forest.png",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 10 },
@@ -43,7 +43,7 @@
     "category": "honey",
     "name": "Малина-ежевика",
     "description": "Уникальный лесной сорт с нежным ягодным послевкусием. Очень душистый и мягкий.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/honey-raspberry.png",
     "badges": ["Редкость"],
     "variants": [
       { "size": "300 г", "price": 10 },
@@ -82,7 +82,7 @@
     "category": "honey",
     "name": "Мёд Гречишный",
     "description": "Благородный темный цвет и узнаваемая перчинка во вкусе. Рекордсмен по содержанию железа и микроэлементов.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/honey-buckwheat.png",
     "badges": ["Хит"],
     "variants": [
       { "size": "300 г", "price": 11 },
@@ -339,7 +339,7 @@
     "category": "bee-products",
     "name": "Пыльца цветочная",
     "description": "Концентрат солнечной энергии. Содержит все известные витамины и микроэлементы. Заряжает бодростью лучше кофе.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/bee-pollen.png",
     "badges": ["Витамины"],
     "variants": [
       { "size": "150 г", "price": 20 },
