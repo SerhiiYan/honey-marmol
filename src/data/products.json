@@ -2,7 +2,7 @@
   {
     "id": "honey-jul-mix",
     "category": "honey",
-    "name": "Июльское разнотравье",
+    "name": "Разнотравье",
     "description": "Насыщенный букет середины лета. Собрал в себе ароматы десятков луговых цветов в пике их цветения.",
     "image": "/images/honey-jul-mix.png",
     "badges": [],
@@ -15,7 +15,7 @@
   {
     "id": "honey-may",
     "category": "honey",
-    "name": "Мёд Майский",
+    "name": "Майский",
     "description": "Первый, самый нежный мёд сезона. Легкий, почти прозрачный, с тонкими нотками весенних первоцветов и фруктовых деревьев.",
     "image": "/images/honey-may.png",
     "badges": ["Новинка"],
@@ -28,7 +28,7 @@
   {
     "id": "honey-forest",
     "category": "honey",
-    "name": "Мёд Лесной",
+    "name": "Лесной",
     "description": "Темный, тягучий, с глубоким терпким вкусом и хвойными нотками. Впитал в себя силу дикой природы.",
     "image": "/images/honey-forest.png",
     "badges": [],
@@ -80,7 +80,7 @@
   {
     "id": "honey-buckwheat",
     "category": "honey",
-    "name": "Мёд Гречишный",
+    "name": "Гречишный",
     "description": "Благородный темный цвет и узнаваемая перчинка во вкусе. Рекордсмен по содержанию железа и микроэлементов.",
     "image": "/images/honey-buckwheat.png",
     "badges": ["Хит"],
@@ -374,21 +374,10 @@
     "category": "cream",
     "name": "Крем-мёд с маточным молочком",
     "description": "Эксклюзивный продукт. Нежная текстура крем-меда обогащена мощным маточным молочком.",
-    "image": "/images/cream-royalt.png",
+    "image": "/images/cream-royal.png",
     "badges": ["Exclusive"],
     "variants": [
       { "size": "Баночка", "price": 70 }
-    ]
-  },
-  {
-    "id": "tea-herbal",
-    "category": "tea",
-    "name": "Чай травяной (Сбор)",
-    "description": "Ароматный сбор из трав, собранных на тех же полях, где летают наши пчелы. Идеально раскрывает вкус меда.",
-    "image": "/images/honey-linden.png",
-    "badges": [],
-    "variants": [
-      { "size": "40 г", "price": 10 }
     ]
   }
 ]

@@ -1,0 +1,11 @@
+{
+    "id": "tea-herbal",
+    "category": "tea",
+    "name": "Чай травяной (Сбор)",
+    "description": "Ароматный сбор из трав, собранных на тех же полях, где летают наши пчелы. Идеально раскрывает вкус меда.",
+    "image": "/images/honey-linden.png",
+    "badges": [],
+    "variants": [
+      { "size": "40 г", "price": 10 }
+    ]
+  }
