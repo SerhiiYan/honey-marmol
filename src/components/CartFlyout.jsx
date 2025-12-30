@@ -72,8 +72,8 @@ export default function CartFlyout() {
                   {/* Название и Управление количеством (Центр) */}
                   <div className="flex-1">
                     <h3 className="text-white font-bold text-sm leading-tight pr-2">{item.name}</h3>
-                    <p className="text-gray-400 text-xs mt-1 mb-2">
-                        {item.variant.size}
+                    <p className="text-gray-500 text-xs mt-1 mb-2">
+                        Объем: <span className="text-brand-yellow font-bold">{item.variant.size}</span>
                     </p>
 
                     {/* СЧЕТЧИК ПРЯМО В КОРЗИНЕ */}

@@ -4,7 +4,7 @@
     "category": "honey",
     "name": "Июльское разнотравье",
     "description": "Насыщенный букет середины лета. Собрал в себе ароматы десятков луговых цветов в пике их цветения.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/honey-jul-mix.png",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 10 },
@@ -56,7 +56,7 @@
     "category": "honey",
     "name": "Золотарниковый",
     "description": "Янтарный мёд с легкой горчинкой и ярким желтым цветом. Быстро густеет, сохраняя полезные свойства.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/honey-goldenrod.png",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 10 },
@@ -69,7 +69,7 @@
     "category": "honey",
     "name": "Васильковый",
     "description": "Изысканный сорт с едва уловимым ароматом миндаля и зеленоватым оттенком. Настоящая полевая классика Беларуси.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/honey-cornflower.png",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 11 },
@@ -95,7 +95,7 @@
     "category": "honey",
     "name": "Вересковый",
     "description": "Знаменитый 'вересковый мед'. Густой, желеобразный, с сильным ароматом и благородной горчинкой. Гурманский сорт.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/honey-heather.png",
     "badges": ["Премиум"],
     "variants": [
       { "size": "300 г", "price": 12 },
@@ -108,7 +108,7 @@
     "category": "honey",
     "name": "Липа-лаванда",
     "description": "Необычный купаж. Сладость липы переплетается с успокаивающими нотками лаванды. Идеален для вечернего чаепития.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/honey-linden-lavender.png",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 12 },
@@ -121,7 +121,7 @@
     "category": "honey",
     "name": "Акациевый",
     "description": "Жидкое золото. Долго не кристаллизуется, обладает тончайшим вкусом без горечи. Самый гипоаллергенный сорт.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/honey-acacia.png",
     "badges": ["Топ выбор"],
     "variants": [
       { "size": "300 г", "price": 15 },
@@ -134,7 +134,7 @@
     "category": "nuts",
     "name": "Мёд с фундуком",
     "description": "Цельный отборный фундук в акациевом меду. Классическое сочетание, дающее энергию и насыщенный ореховый вкус.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/nut-hazelnut.png",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -146,7 +146,7 @@
     "category": "nuts",
     "name": "Мёд с грецким орехом",
     "description": "Полезнейший дуэт для работы мозга. Легкая горчинка грецкого ореха идеально компенсируется сладостью меда.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/nut-walnut.png",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -158,7 +158,7 @@
     "category": "nuts",
     "name": "Мёд с миндалём",
     "description": "Золотистый обжаренный миндаль залитый прозрачным медом. Изысканный десерт с нотками марципана.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/nut-almond.png",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -170,7 +170,7 @@
     "category": "nuts",
     "name": "Мёд микс орехов",
     "description": "Наш бестселлер. Фундук, миндаль, кешью и грецкий орех в одной банке. Максимум пользы и вкуса.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/nut-mix.png",
     "badges": ["Хит продаж"],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -182,7 +182,7 @@
     "category": "nuts",
     "name": "Мёд с кешью",
     "description": "Самый нежный вариант. Сливочный вкус кешью тает во рту вместе с цветочным медом.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/nut-cashew.png",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -194,7 +194,7 @@
     "category": "nuts",
     "name": "Мёд с тыквенными семечками",
     "description": "Необычное и очень полезное лакомство. Хрустящие семечки создают интересный контраст текстур.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/nut-pumpkin.png",
     "badges": ["Здоровье"],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -206,7 +206,7 @@
     "category": "nuts",
     "name": "Мёд с кедровым орехом",
     "description": "Элитный сибирский десерт. Маслянистый, с тонким хвойным ароматом. Королевский подарок.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/nut-cedar.png",
     "badges": ["Премиум"],
     "variants": [
       { "size": "300 г", "price": 25 },
@@ -218,7 +218,7 @@
     "category": "cream",
     "name": "Крем-мёд классический",
     "description": "Нежнейший взбитый мед. Технология длительного вымешивания превращает его в воздушный крем, который буквально тает во рту.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/cream-classic.png",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -230,7 +230,7 @@
     "category": "cream",
     "name": "Крем-мёд с пергой",
     "description": "Двойная польза. Сладкий крем-мед скрывает специфический вкус перги, делая её доступной даже для детей.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/cream-perga.png",
     "badges": ["Польза"],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -242,7 +242,7 @@
     "category": "cream",
     "name": "Крем-мёд с прополисом",
     "description": "Природный антибиотик. Обладает приятным смолистым ароматом и легкой терпкостью. Мощная поддержка иммунитета.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/cream-propolis.png",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -254,7 +254,7 @@
     "category": "cream",
     "name": "Крем-мёд с голубикой",
     "description": "Ягодный десерт красивого фиолетового цвета. Сладкая голубика идеально дополняет вкус взбитого меда.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/cream-blueberry.png",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -266,7 +266,7 @@
     "category": "cream",
     "name": "Крем-мёд с клюквой",
     "description": "Идеальный баланс кислого и сладкого. Яркий розовый цвет и освежающий вкус лесной клюквы.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/cream-cranberry.png",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -278,7 +278,7 @@
     "category": "cream",
     "name": "Крем-мёд лимон-имбирь",
     "description": "Лучшее средство от простуды и хандры. Согревающий пряный имбирь и цитрусовая свежесть.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/cream-lemon-ginger.png",
     "badges": ["Здоровье"],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -290,7 +290,7 @@
     "category": "cream",
     "name": "Крем-мёд кокос-миндаль",
     "description": "Настоящее «Раффаэлло» в мире меда. Изысканный десертный вкус, который обожают сладкоежки.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/cream-coconut.png",
     "badges": ["Хит продаж"],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -302,7 +302,7 @@
     "category": "cream",
     "name": "Крем-мёд с жимолостью",
     "description": "Редкий вкус. Жимолость — ягода молодости, придающая меду глубокий цвет и необычные пикантные нотки.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/cream-honeysuckle.png",
     "badges": ["Exclusive"],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -314,7 +314,7 @@
     "category": "cream",
     "name": "Крем-мёд с чёрной смородиной",
     "description": "Витаминная бомба. Насыщенный вкус лета и аромат бабушкиного сада. Лидер по содержанию витамина С.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/cream-currant.png",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -326,7 +326,7 @@
     "category": "bee-products",
     "name": "Перга пчелиная",
     "description": "«Пчелиный хлеб». Уникальный природный биостимулятор. Лучше усваивается организмом, чем обычная пыльца. Мощная поддержка иммунитета.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/bee-perga.png",
     "badges": ["Суперфуд"],
     "variants": [
       { "size": "150 г", "price": 20 },
@@ -348,22 +348,11 @@
     ]
   },
   {
-    "id": "tea-herbal",
-    "category": "tea",
-    "name": "Чай травяной (Сбор)",
-    "description": "Ароматный сбор из трав, собранных на тех же полях, где летают наши пчелы. Идеально раскрывает вкус меда.",
-    "image": "/images/honey-linden.png",
-    "badges": [],
-    "variants": [
-      { "size": "40 г", "price": 10 }
-    ]
-  },
-  {
     "id": "bee-zabrus",
     "category": "bee-products",
     "name": "Забрус в липовом мёде",
     "description": "Восковые крышечки сот. Природная «жвачка», полезная для десен и дыхания. Залит нежным липовым медом.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/bee-zabrus.png",
     "badges": ["Для здоровья"],
     "variants": [
       { "size": "300 г", "price": 15 }
@@ -374,7 +363,7 @@
     "category": "bee-products",
     "name": "Маточное молочко",
     "description": "«Королевское желе». Самый сильный биологический продукт пчеловодства. Эликсир молодости и восстановления.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/royal-jelly.png",
     "badges": ["Premium"],
     "variants": [
       { "size": "1 г", "price": 12 }
@@ -385,21 +374,22 @@
     "category": "cream",
     "name": "Крем-мёд с маточным молочком",
     "description": "Эксклюзивный продукт. Нежная текстура крем-меда обогащена мощным маточным молочком.",
-    "image": "/images/honey-linden.png",
+    "image": "/images/cream-royalt.png",
     "badges": ["Exclusive"],
     "variants": [
       { "size": "Баночка", "price": 70 }
     ]
   },
   {
-    "id": "packaging",
-    "category": "bee-products",
-    "name": "Подарочная упаковка",
-    "description": "Красивое оформление вашего сладкого подарка. Сделаем праздник особенным.",
+    "id": "tea-herbal",
+    "category": "tea",
+    "name": "Чай травяной (Сбор)",
+    "description": "Ароматный сбор из трав, собранных на тех же полях, где летают наши пчелы. Идеально раскрывает вкус меда.",
     "image": "/images/honey-linden.png",
     "badges": [],
     "variants": [
-      { "size": "1 шт", "price": 6 }
+      { "size": "40 г", "price": 10 }
     ]
   }
 ]
+

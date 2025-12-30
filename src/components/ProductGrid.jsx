@@ -11,8 +11,8 @@ export default function ProductGrid({ products }) {
     { id: 'honey', label: 'Мёд' },
     { id: 'nuts', label: 'С орехами' },
     { id: 'cream', label: 'Крем-мёд' },
-    { id: 'bee-products', label: 'Здоровье' }, // Сюда попадут перга, пыльца, молочко
-    { id: 'tea', label: 'Чай' },
+    { id: 'bee-products', label: 'Здоровье' }, 
+    // { id: 'tea', label: 'Чай' },
   ];
 
   // Фильтруем товары на лету
