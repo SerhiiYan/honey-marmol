@@ -109,7 +109,12 @@ export default function ProductCard({ product }) {
             {/* Цена и кнопка */}
             <div className="flex items-center justify-between border-t border-white/10 pt-4">
                 <div className="text-left">
-                    <div className="text-xs text-gray-500">Цена за шт:</div>
+                    
+                    {/* УМНАЯ ЛОГИКА ТУТ: Если id='royal-jelly', пишем "за грамм", иначе "за шт" */}
+                    <div className="text-xs text-gray-500">
+                        {product.id === 'royal-jelly' ? 'Цена за грамм:' : 'Цена за шт:'}
+                    </div>
+                    
                     <div className="text-xl font-bold text-brand-yellow whitespace-nowrap">
                         {selectedVariant.price} BYN
                     </div>
@@ -127,13 +132,13 @@ export default function ProductCard({ product }) {
                 >
                     {isAdded ? (
                         <span className="flex items-center gap-2 animate-in fade-in zoom-in duration-200">
+                             {/* Галочка */}
                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                                 <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clipRule="evenodd" />
                             </svg>
                              В корзине
                         </span>
                     ) : (
-                        // Если выбрали больше 1, пишем "Купить (5)"
                         count > 1 ? `Купить (${count})` : "Купить"
                     )}
                 </button>
