@@ -1,30 +1,129 @@
 ---
 // src/pages/index.astro
 import Layout from '../layouts/Layout.astro';
+
+// Путь к твоему лучшему фото
+const heroImage = "/images/bee-zabrus/bee-zabrus.png"; 
 ---
 
 <Layout title="Marmol Honey | Главная">
     
-    <!-- Hero Секция -->
-    <section class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+    <section class="relative min-h-screen flex items-center overflow-hidden bg-[#161618]">
         
-        <!-- Тут потом будет фото на фоне, пока градиент -->
-        <div class="absolute inset-0 bg-gradient-to-b from-brand-dark via-transparent to-brand-dark z-10"></div>
+        <!-- 1. ФОНОВЫЕ ЭЛЕМЕНТЫ -->
+        <!-- Желтое пятно света в правом углу -->
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-yellow/10 rounded-full blur-[120px] translate-x-1/3 -translate-y-1/4 pointer-events-none"></div>
         
-        <div class="relative z-20 text-center max-w-4xl px-4 mt-[-50px]">
-            <!-- <h1 class="text-5xl md:text-8xl mb-6 text-white leading-tight">
-                Чистый.<br/> 
-                <span class="text-brand-yellow">Честный.</span><br/>
-                Твой.
-            </h1> -->
-            <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-lg mx-auto font-sans font-light">
-                Мы собираем этот мёд своими руками в экологически чистых районах, чтобы ты почувствовал настоящий вкус природы.
-            </p>
+        <!-- Огромная надпись HONEY на фоне (контурная) -->
+        <div class="absolute right-0 bottom-0 select-none pointer-events-none z-0 opacity-10">
+            <span class="text-[20vw] leading-none font-black font-heading text-transparent bg-clip-text bg-gradient-to-t from-white to-transparent" style="-webkit-text-stroke: 2px white;">
+                HONEY
+            </span>
+        </div>
+
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full py-20 lg:py-0">
             
-            <a href="/catalog" class="inline-block bg-brand-yellow text-brand-dark font-bold font-heading uppercase tracking-wider py-4 px-10 hover:bg-white transition-colors cursor-pointer">
-                Перейти в каталог
-            </a>
+            <!-- ЛЕВАЯ КОЛОНКА: ТЕКСТ -->
+            <div class="order-2 lg:order-1 flex flex-col items-start text-left">
+                
+                <div class="inline-flex items-center gap-2 border border-brand-yellow/30 bg-brand-yellow/10 rounded-full px-4 py-1 mb-6 animate-in slide-in-from-left duration-700">
+                    <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
+                    <span class="text-brand-yellow text-xs font-bold uppercase tracking-widest">Новый сезон открыт</span>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl xl:text-8xl font-heading font-bold text-white uppercase leading-[0.9] mb-6 animate-in slide-in-from-bottom duration-700 delay-100">
+                    Вкус <br/>
+                    <span class="text-brand-yellow">Дикой</span> <br/>
+                    Природы
+                </h1>
+
+                <p class="text-gray-400 text-lg md:text-xl font-light max-w-lg mb-10 leading-relaxed animate-in slide-in-from-bottom duration-700 delay-200">
+                    Мед, который мы собираем вручную в лесах Гродненщины. 
+                    Густой, тягучий и невероятно ароматный. Попробуй настоящий вкус.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto animate-in slide-in-from-bottom duration-700 delay-300">
+                    <a href="/catalog" class="px-10 py-5 bg-brand-yellow text-brand-dark font-bold font-heading uppercase tracking-wider text-lg hover:bg-white transition-all duration-300 rounded-sm skew-x-[-10deg] flex items-center justify-center group">
+                        <span class="skew-x-[10deg]">Купить мёд</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 ml-2 skew-x-[10deg] group-hover:translate-x-1 transition-transform">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Статистика внизу -->
+                <div class="mt-12 md:mt-16 flex gap-8 border-t border-white/10 pt-6 animate-in fade-in delay-500">
+                    <div>
+                        <p class="text-3xl font-heading font-bold text-white">100%</p>
+                        <p class="text-xs text-gray-500 uppercase tracking-wider">Натурально</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-heading font-bold text-white">20+</p>
+                        <p class="text-xs text-gray-500 uppercase tracking-wider">Сортов мёда</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ПРАВАЯ КОЛОНКА: БАНКА (КРУПНО) -->
+            <div class="order-1 lg:order-2 relative flex justify-center items-center h-[40vh] lg:h-auto">
+                
+                <!-- Декоративный круг за банкой -->
+                <div class="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] border border-white/5 rounded-full animate-spin-slow"></div>
+                <div class="absolute w-[280px] h-[280px] md:w-[480px] md:h-[480px] border border-brand-yellow/10 rounded-full"></div>
+
+                <!-- Сама банка -->
+                <img 
+                    src={heroImage} 
+                    alt="Hero Honey" 
+                    class="relative z-10 w-full max-w-sm md:max-w-md lg:max-w-lg object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] animate-float"
+                />
+
+                <!-- Плавающие плашки (Floating Badges) -->
+                <!-- Плашка 1: Цена -->
+                <div class="absolute top-10 right-0 md:right-10 bg-white/10 backdrop-blur-md border border-white/10 p-4 rounded-xl shadow-2xl animate-float-delayed hidden md:block">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-brand-yellow p-2 rounded-lg text-black">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a22.53 22.53 0 0 0 4.242-4.242c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" /></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400">Лучшая цена</p>
+                            <p class="text-white font-bold">от 10 BYN</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Плашка 2: Урожай -->
+                 <div class="absolute bottom-10 left-0 bg-[#1A1A1A] border border-brand-yellow/30 p-3 rounded-lg shadow-xl flex items-center gap-3 animate-float hidden md:flex">
+                    <span class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
+                    <span class="text-white text-sm font-bold tracking-wide">СВЕЖИЙ УРОЖАЙ 2024</span>
+                 </div>
+
+            </div>
         </div>
     </section>
 
 </Layout>
+
+<style>
+    @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+        animation: spin-slow 20s linear infinite;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+    }
+    .animate-float {
+        animation: float 5s ease-in-out infinite;
+    }
+    
+    .animate-float-delayed {
+        animation: float 6s ease-in-out infinite;
+        animation-delay: 1s;
+    }
+</style>

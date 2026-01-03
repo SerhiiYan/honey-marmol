@@ -4,31 +4,22 @@ import { addCartItem } from '../store/cartStore';
 export default function ProductCard({ product }) {
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
   const [isAdded, setIsAdded] = useState(false);
-  
-  // Локальное состояние счетчика (по умолчанию 1)
   const [count, setCount] = useState(1);
 
-  // Функции для плюса и минуса
   const increment = () => setCount(prev => (prev < 99 ? prev + 1 : prev));
   const decrement = () => setCount(prev => (prev > 1 ? prev - 1 : prev));
 
   const handleAddToCart = () => {
-    // Передаем count вторым аргументом!
     addCartItem({
       id: product.id,
       name: product.name,
       variant: selectedVariant,
       image: product.image,
       price: selectedVariant.price
-    }, count); // <--- Важно!
+    }, count); 
     
-    // Анимация кнопки
     setIsAdded(true);
-    
-    // Сбрасываем количество обратно на 1 после добавления? 
-    // Обычно удобнее сбросить, чтобы случайно не купить еще 10.
     setCount(1);
-
     setTimeout(() => {
         setIsAdded(false);
     }, 1000);
@@ -49,26 +40,35 @@ export default function ProductCard({ product }) {
         ))}
       </div>
 
-      {/* Изображение */}
-      <div className="relative z-10 h-64 flex items-center justify-center mb-4">
-        <img 
-            src={product.image} 
-            alt={product.name} 
-            className="h-full object-contain drop-shadow-xl transition-transform duration-500 group-hover:scale-110"
-        />
-      </div>
+      {/* --- ВОТ ЗДЕСЬ НАЧИНАЕТСЯ ССЫЛКА --- */}
+      {/* Мы оборачиваем Картинку и Текст в ссылку на страницу товара */}
+      <a href={`/product/${product.id}`} className="contents cursor-pointer">
+          
+          {/* Изображение */}
+          <div className="relative z-10 h-64 flex items-center justify-center mb-4">
+            <img 
+                src={product.image} 
+                alt={product.name} 
+                // Это нужно для красивой анимации перехода
+                style={{ viewTransitionName: `image-${product.id}` }}
+                className="h-full object-contain drop-shadow-xl transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
 
-      {/* Информация */}
-      <div className="relative z-10 text-center flex-grow flex flex-col">
-        <h3 className="text-2xl font-heading font-bold text-white mb-2 leading-none">
-            {product.name}
-        </h3>
-        
-        <p className="text-gray-400 text-sm mb-4 line-clamp-3 min-h-[60px]">
-            {product.description}
-        </p>
+          {/* Информация (Название и Описание) */}
+          <div className="relative z-10 text-center flex-grow flex flex-col mb-4">
+            <h3 className="text-2xl font-heading font-bold text-white mb-2 leading-none group-hover:text-brand-yellow transition-colors">
+                {product.name}
+            </h3>
+            
+            <p className="text-gray-400 text-sm line-clamp-3 min-h-[60px]">
+                {product.description}
+            </p>
+          </div>
+      </a>
+      {/* --- КОНЕЦ ССЫЛКИ --- */}
 
-        <div className="mt-auto">
+      <div className="mt-auto relative z-20">
             {/* Ряд с выбором размера и счетчиком */}
             <div className="flex items-center justify-between mb-6">
                 
@@ -90,31 +90,16 @@ export default function ProductCard({ product }) {
 
                 {/* Счетчик количества (Справа) */}
                 <div className="flex items-center bg-brand-dark/50 border border-white/10 rounded-lg">
-                    <button 
-                        onClick={decrement}
-                        className="px-3 py-1 text-gray-400 hover:text-white transition-colors cursor-pointer text-lg leading-none"
-                    >
-                        -
-                    </button>
+                    <button onClick={decrement} className="px-3 py-1 text-gray-400 hover:text-white transition-colors cursor-pointer text-lg leading-none">-</button>
                     <span className="text-white font-bold w-4 text-center text-sm">{count}</span>
-                    <button 
-                        onClick={increment}
-                        className="px-3 py-1 text-gray-400 hover:text-brand-yellow transition-colors cursor-pointer text-lg leading-none"
-                    >
-                        +
-                    </button>
+                    <button onClick={increment} className="px-3 py-1 text-gray-400 hover:text-brand-yellow transition-colors cursor-pointer text-lg leading-none">+</button>
                 </div>
             </div>
 
             {/* Цена и кнопка */}
             <div className="flex items-center justify-between border-t border-white/10 pt-4">
                 <div className="text-left">
-                    
-                    {/* УМНАЯ ЛОГИКА ТУТ: Если id='royal-jelly', пишем "за грамм", иначе "за шт" */}
-                    <div className="text-xs text-gray-500">
-                        {product.id === 'royal-jelly' ? 'Цена за грамм:' : 'Цена за шт:'}
-                    </div>
-                    
+                    <div className="text-xs text-gray-500">Цена за шт:</div>
                     <div className="text-xl font-bold text-brand-yellow whitespace-nowrap">
                         {selectedVariant.price} BYN
                     </div>
@@ -132,7 +117,6 @@ export default function ProductCard({ product }) {
                 >
                     {isAdded ? (
                         <span className="flex items-center gap-2 animate-in fade-in zoom-in duration-200">
-                             {/* Галочка */}
                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                                 <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clipRule="evenodd" />
                             </svg>
@@ -144,7 +128,6 @@ export default function ProductCard({ product }) {
                 </button>
             </div>
         </div>
-      </div>
     </div>
   );
 }

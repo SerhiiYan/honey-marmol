@@ -74,17 +74,7 @@ export default function CartFlyout() {
                     <h3 className="text-white font-bold text-sm leading-tight pr-2">{item.name}</h3>
                     
                     <p className="text-gray-500 text-xs mt-1 mb-2">
-                        {/* СПЕЦИАЛЬНАЯ ЛОГИКА ДЛЯ МАТОЧНОГО МОЛОЧКА */}
-                        {item.id === 'royal-jelly' ? (
-                            <>
-                               Общий вес: <span className="text-brand-yellow font-bold">{item.quantity} г</span>
-                            </>
-                        ) : (
-                            // ДЛЯ ВСЕХ ОСТАЛЬНЫХ (Мёд, Орехи)
-                            <>
-                               Объем: <span className="text-brand-yellow font-bold">{item.variant.size}</span>
-                            </>
-                        )}
+                        Объем: <span className="text-brand-yellow font-bold">{item.variant.size}</span>
                     </p>
 
                     {/* СЧЕТЧИК */}

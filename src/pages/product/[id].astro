@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProductViewer from '../../components/ProductViewer.jsx';
+import ProductGallery from '../../components/ProductGallery.jsx'; // Импортируем нашу новую галерею
+import products from '../../data/products.json';
+
+// Генерация статических страниц для каждого товара
+export function getStaticPaths() {
+  return products.map((product) => ({
+    params: { id: product.id },
+    props: { product },
+  }));
+}
+
+const { product } = Astro.props;
+---
+
+<Layout title={`${product.name} | Marmol Honey`} description={product.description}>
+    
+    <div class="min-h-screen pt-10 pb-20 px-4 md:px-8 max-w-7xl mx-auto flex flex-col justify-center">
+        
+        {/* Кнопка НАЗАД */}
+        <a 
+            href="javascript:history.back()" 
+            class="fixed top-24 left-4 md:left-8 z-40 flex items-center gap-2 text-gray-500 hover:text-brand-yellow transition-colors cursor-pointer bg-brand-dark/80 backdrop-blur rounded-full py-2 px-4 border border-white/5 shadow-lg"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>
+            <span class="text-sm font-bold uppercase tracking-wide">Назад</span>
+        </a>
+
+        {/* Сетка страницы товара */}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 w-full items-start mt-10 md:mt-0">
+            
+            {/* ЛЕВАЯ КОЛОНКА: Галерея (С фото и миниатюрами) */}
+            <div class="relative w-full">
+                 <ProductGallery 
+                    client:load 
+                    mainImage={product.image} 
+                    gallery={product.gallery} 
+                    productId={product.id} 
+                 />
+            </div>
+
+            {/* ПРАВАЯ КОЛОНКА: Информация, Цена, Выбор веса (React) */}
+            <div class="relative z-20">
+                <ProductViewer client:load product={product} />
+            </div>
+
+        </div>
+
+    </div>
+
+</Layout>
