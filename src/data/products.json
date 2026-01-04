@@ -3,6 +3,7 @@
     "id": "honey-jul-mix",
     "category": "honey",
     "name": "Разнотравье",
+    "inStock": false,
     "description": "Насыщенный букет середины лета. Собрал в себе ароматы десятков луговых цветов в пике их цветения.",
     "gallery": [
        "/images/honey-jul-mix/honey-jul-mix-1.png"
@@ -19,6 +20,7 @@
     "id": "honey-may",
     "category": "honey",
     "name": "Майский",
+    "inStock": true,
     "description": "Первый, самый нежный мёд сезона. Легкий, почти прозрачный, с тонкими нотками весенних первоцветов и фруктовых деревьев.",
     "gallery": [
        "/images/honey-may/honey-may-1.png"
@@ -35,6 +37,7 @@
     "id": "honey-forest",
     "category": "honey",
     "name": "Лесной",
+    "inStock": true,
     "description": "Темный, тягучий, с глубоким терпким вкусом и хвойными нотками. Впитал в себя силу дикой природы.",
     "gallery": [
        "/images/honey-forest/honey-forest-1.png"
@@ -51,6 +54,7 @@
     "id": "honey-raspberry",
     "category": "honey",
     "name": "Малина-ежевика",
+    "inStock": true,
     "description": "Уникальный лесной сорт с нежным ягодным послевкусием. Очень душистый и мягкий.",
     "gallery": [
        "/images/honey-raspberry/honey-raspberry-1.png"
@@ -67,6 +71,7 @@
     "id": "honey-goldenrod",
     "category": "honey",
     "name": "Золотарниковый",
+    "inStock": true,
     "description": "Янтарный мёд с легкой горчинкой и ярким желтым цветом. Быстро густеет, сохраняя полезные свойства.",
     "gallery": [
        "/images/honey-goldenrod/honey-goldenrod-1.png"
@@ -83,6 +88,7 @@
     "id": "honey-cornflower",
     "category": "honey",
     "name": "Васильковый",
+    "inStock": true,
     "description": "Изысканный сорт с едва уловимым ароматом миндаля и зеленоватым оттенком. Настоящая полевая классика Беларуси.",
     "gallery": [
        "/images/honey-cornflower/honey-cornflower-1.png"
@@ -99,6 +105,7 @@
     "id": "honey-buckwheat",
     "category": "honey",
     "name": "Гречишный",
+    "inStock": true,
     "description": "Благородный темный цвет и узнаваемая перчинка во вкусе. Рекордсмен по содержанию железа и микроэлементов.",
     "gallery": [
        "/images/honey-buckwheat/honey-buckwheat-1.png"
@@ -115,6 +122,7 @@
     "id": "honey-heather",
     "category": "honey",
     "name": "Вересковый",
+    "inStock": true,
     "description": "Знаменитый 'вересковый мед'. Густой, желеобразный, с сильным ароматом и благородной горчинкой. Гурманский сорт.",
     "gallery": [
        "/images/honey-heather/honey-heather-1.png", 
@@ -132,6 +140,7 @@
     "id": "honey-linden-lavender",
     "category": "honey",
     "name": "Липа-лаванда",
+    "inStock": true,
     "description": "Необычный купаж. Сладость липы переплетается с успокаивающими нотками лаванды. Идеален для вечернего чаепития.",
     "gallery": [
        "/images/honey-linden-lavender/honey-linden-lavender-1.png"
@@ -148,6 +157,7 @@
     "id": "honey-acacia",
     "category": "honey",
     "name": "Акациевый",
+    "inStock": true,
     "description": "Жидкое золото. Долго не кристаллизуется, обладает тончайшим вкусом без горечи. Самый гипоаллергенный сорт.",
     "gallery": [
        "/images/honey-acacia/honey-acacia-1.jpg"
@@ -164,6 +174,7 @@
     "id": "nut-hazelnut",
     "category": "nuts",
     "name": "Мёд с фундуком",
+    "inStock": true,
     "description": "Цельный отборный фундук в акациевом меду. Классическое сочетание, дающее энергию и насыщенный ореховый вкус.",
     "gallery": [
        "/images/nut-hazelnut/nut-hazelnut-1.jpg", 
@@ -180,6 +191,7 @@
     "id": "nut-walnut",
     "category": "nuts",
     "name": "Мёд с грецким орехом",
+    "inStock": true,
     "description": "Полезнейший дуэт для работы мозга. Легкая горчинка грецкого ореха идеально компенсируется сладостью меда.",
     "gallery": [
        "/images/nut-walnut/nut-walnut-1.jpg"
@@ -195,6 +207,7 @@
     "id": "nut-almond",
     "category": "nuts",
     "name": "Мёд с миндалём",
+    "inStock": true,
     "description": "Золотистый обжаренный миндаль залитый прозрачным медом. Изысканный десерт с нотками марципана.",
     "gallery": [
        "/images/nut-almond/nut-almond-1.jpg"
@@ -210,7 +223,8 @@
     "id": "nut-mix",
     "category": "nuts",
     "name": "Мёд микс орехов",
-    "description": "Наш бестселлер. Фундук, миндаль, кешью и грецкий орех в одной банке. Максимум пользы и вкуса.",
+    "inStock": true,
+    "description": "Наш бестселлер. Фундук, миндаль, кедровый и грецкий орех в одной банке. Максимум пользы и вкуса.",
     "gallery": [
        "/images/nut-mix/nut-mix-1.jpg"
     ],
@@ -225,6 +239,7 @@
     "id": "nut-cashew",
     "category": "nuts",
     "name": "Мёд с кешью",
+    "inStock": true,
     "description": "Самый нежный вариант. Сливочный вкус кешью тает во рту вместе с цветочным медом.",
     "gallery": [
        
@@ -240,6 +255,7 @@
     "id": "nut-pumpkin",
     "category": "nuts",
     "name": "Мёд с тыквенными семечками",
+    "inStock": true,
     "description": "Необычное и очень полезное лакомство. Хрустящие семечки создают интересный контраст текстур.",
     "gallery": [
 
@@ -255,6 +271,7 @@
     "id": "nut-cedar",
     "category": "nuts",
     "name": "Мёд с кедровым орехом",
+    "inStock": true,
     "description": "Элитный сибирский десерт. Маслянистый, с тонким хвойным ароматом. Королевский подарок.",
     "gallery": [
 
@@ -270,6 +287,7 @@
     "id": "cream-classic",
     "category": "cream",
     "name": "Крем-мёд классический",
+    "inStock": true,
     "description": "Нежнейший взбитый мед. Технология длительного вымешивания превращает его в воздушный крем, который буквально тает во рту.",
     "gallery": [
        
@@ -285,6 +303,7 @@
     "id": "cream-perga",
     "category": "cream",
     "name": "Крем-мёд с пергой",
+    "inStock": true,
     "description": "Двойная польза. Сладкий крем-мед скрывает специфический вкус перги, делая её доступной даже для детей.",
     "gallery": [
 
@@ -300,6 +319,7 @@
     "id": "cream-propolis",
     "category": "cream",
     "name": "Крем-мёд с прополисом",
+    "inStock": true,
     "description": "Природный антибиотик. Обладает приятным смолистым ароматом и легкой терпкостью. Мощная поддержка иммунитета.",
     "gallery": [
 
@@ -315,6 +335,7 @@
     "id": "cream-blueberry",
     "category": "cream",
     "name": "Крем-мёд с голубикой",
+    "inStock": true,
     "description": "Ягодный десерт красивого фиолетового цвета. Сладкая голубика идеально дополняет вкус взбитого меда.",
     "gallery": [
 
@@ -330,6 +351,7 @@
     "id": "cream-cranberry",
     "category": "cream",
     "name": "Крем-мёд с клюквой",
+    "inStock": true,
     "description": "Идеальный баланс кислого и сладкого. Яркий розовый цвет и освежающий вкус лесной клюквы.",
     "gallery": [
 
@@ -345,6 +367,7 @@
     "id": "cream-lemon-ginger",
     "category": "cream",
     "name": "Крем-мёд лимон-имбирь",
+    "inStock": true,
     "description": "Лучшее средство от простуды и хандры. Согревающий пряный имбирь и цитрусовая свежесть.",
     "gallery": [
 
@@ -360,6 +383,7 @@
     "id": "cream-coconut",
     "category": "cream",
     "name": "Крем-мёд кокос-миндаль",
+    "inStock": true,
     "description": "Настоящее «Раффаэлло» в мире меда. Изысканный десертный вкус, который обожают сладкоежки.",
     "gallery": [
 
@@ -375,6 +399,7 @@
     "id": "cream-honeysuckle",
     "category": "cream",
     "name": "Крем-мёд с жимолостью",
+    "inStock": true,
     "description": "Редкий вкус. Жимолость — ягода молодости, придающая меду глубокий цвет и необычные пикантные нотки.",
     "gallery": [
 
@@ -390,6 +415,7 @@
     "id": "cream-currant",
     "category": "cream",
     "name": "Крем-мёд с чёрной смородиной",
+    "inStock": true,
     "description": "Витаминная бомба. Насыщенный вкус лета и аромат бабушкиного сада. Лидер по содержанию витамина С.",
     "gallery": [
 
@@ -405,6 +431,7 @@
     "id": "bee-perga",
     "category": "bee-products",
     "name": "Перга пчелиная",
+    "inStock": true,
     "description": "«Пчелиный хлеб». Уникальный природный биостимулятор. Лучше усваивается организмом, чем обычная пыльца. Мощная поддержка иммунитета.",
     "gallery": [
        "/images/bee-perga/bee-perga-1.png", 
@@ -422,6 +449,7 @@
     "id": "bee-pollen",
     "category": "bee-products",
     "name": "Пыльца цветочная",
+    "inStock": true,
     "description": "Концентрат солнечной энергии. Содержит все известные витамины и микроэлементы. Заряжает бодростью лучше кофе.",
     "gallery": [
        "/images/bee-pollen/bee-pollen-1.png", 
@@ -439,6 +467,7 @@
     "id": "bee-zabrus",
     "category": "bee-products",
     "name": "Забрус в липовом мёде",
+    "inStock": true,
     "description": "Восковые крышечки сот. Природная «жвачка», полезная для десен и дыхания. Залит нежным липовым медом.",
     "gallery": [
 
@@ -453,6 +482,7 @@
     "id": "royal-jelly",
     "category": "bee-products",
     "name": "Маточное молочко",
+    "inStock": true,
     "description": "«Королевское желе». Самый сильный биологический продукт пчеловодства. Эликсир молодости и восстановления.",
     "gallery": [
 
@@ -467,6 +497,7 @@
     "id": "cream-royal",
     "category": "cream",
     "name": "Крем-мёд с маточным молочком",
+    "inStock": true,
     "description": "Эксклюзивный продукт. Нежная текстура крем-меда обогащена мощным маточным молочком.",
     "gallery": [
        "/images/cream-royal/cream-royal-1.jpg"
@@ -481,6 +512,7 @@
     "id": "tea-imperial",
     "category": "tea",
     "name": "Чай «Императорский»",
+    "inStock": true,
     "description": "Богатый купаж чёрного чая с ягодами годжи, кусочками яблока и ананаса. Аромат дополняют цедра апельсина, шиповник, лилия и клубника.",
     "gallery": [
 
@@ -495,6 +527,7 @@
     "id": "tea-mango-passion",
     "category": "tea",
     "name": "Чай «Манго-маракуйя»",
+    "inStock": true,
     "description": "Тропическое наслаждение. Классический чёрный чай с лепестками розы, сладкими кусочками манго и яблока.",
     "gallery": [
 
@@ -509,6 +542,7 @@
     "id": "tea-1001-night",
     "category": "tea",
     "name": "Чай «1001 ночь»",
+    "inStock": true,
     "description": "Загадочная смесь индийского чёрного чая и зелёного чая Сенча. Внутри: красная вяленая вишня, ананас и лепестки цветов (роза, василек, календула).",
     "gallery": [
 
@@ -523,6 +557,7 @@
     "id": "tea-taiga",
     "category": "tea",
     "name": "Чай «Таёжный сбор»",
+    "inStock": true,
     "description": "Сила леса. Зелёный чай с можжевельником, листом брусники, боярышником и шиповником. Украшен лепестками василька и календулы.",
     "gallery": [
 
@@ -537,6 +572,7 @@
     "id": "tea-black-mojito",
     "category": "tea",
     "name": "Чай «Чёрный мохито»",
+    "inStock": true,
     "description": "Освежающий вкус знаменитого коктейля. Чёрный чай, мята, лимон, кусочки яблока и нежные лепестки хризантемы.",
     "gallery": [
 
@@ -551,6 +587,7 @@
     "id": "tea-champagne",
     "category": "tea",
     "name": "Брызги шампанского",
+    "inStock": true,
     "description": "Праздничный вкус. Чёрный чай с кусочками клубники, виноградным листом и синими лепестками василька.",
     "gallery": [
 
@@ -565,6 +602,7 @@
     "id": "pack-box-plywood",
     "category": "packaging",
     "name": "Подарочная шкатулка Marmol",
+    "inStock": true,
     "description": "Эстетичная упаковка из березовой фанеры с фирменной гравировкой и удобной крышкой. Идеально подогнана под баночки объемом 300 г.",
     "gallery": [
        "/images/pack-box-plywood/pack-box-plywood-1.jpg", 
@@ -583,6 +621,7 @@
     "id": "pack-basket-oak",
     "category": "packaging",
     "name": "Дубовая корзина",
+    "inStock": true,
     "description": "Брутальный крафтовый стиль. Массив натурального дуба, покрытый маслом, и ручка из джутового каната. Универсальна: подходит для банок 300 г и 500 г.",
     "gallery": [
        "/images/pack-basket-oak/pack-basket-oak-1.jpg", 

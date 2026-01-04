@@ -1,0 +1,67 @@
+---
+const items = [
+  "HANDMADE IN BELARUS",
+  "100% NATURAL HONEY",
+  "WITHOUT SUGAR",
+  "PREMIUM QUALITY",
+  "MARMOL HONEY",
+  "ECO PRODUCT",
+  "FAMILY FARM",
+  "GRODNO REGION"
+];
+---
+
+<div class="relative w-full overflow-hidden bg-brand-yellow py-4 border-y border-brand-dark/20 z-20">
+    <!-- 
+        Обертка-трэк.
+        Внутри два одинаковых набора текста.
+        Анимация двигает их влево бесконечно.
+    -->
+    <div class="flex whitespace-nowrap animate-marquee">
+        
+        {/* ПЕРВЫЙ НАБОР */}
+        <div class="flex items-center gap-8 px-4">
+            {items.map((text) => (
+                <div class="flex items-center gap-8">
+                    <span class="text-xl md:text-2xl font-heading font-bold text-brand-dark tracking-widest uppercase">
+                        {text}
+                    </span>
+                    {/* Декоративная точка-разделитель (ромбик) */}
+                    <div class="w-2 h-2 bg-brand-dark rotate-45 opacity-50"></div>
+                </div>
+            ))}
+        </div>
+
+        {/* ВТОРОЙ НАБОР (Дубликат для бесшовной петли) */}
+        <div class="flex items-center gap-8 px-4">
+            {items.map((text) => (
+                <div class="flex items-center gap-8">
+                    <span class="text-xl md:text-2xl font-heading font-bold text-brand-dark tracking-widest uppercase">
+                        {text}
+                    </span>
+                    <div class="w-2 h-2 bg-brand-dark rotate-45 opacity-50"></div>
+                </div>
+            ))}
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .animate-marquee {
+        display: flex;
+        animation: marquee 20s linear infinite;
+        /* Чтобы на мобилках не дергалось */
+        transform: translate3d(0, 0, 0); 
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            /* Сдвигаем ровно на 50%, так как у нас два одинаковых блока */
+            transform: translateX(-50%);
+        }
+    }
+</style>

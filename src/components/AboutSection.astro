@@ -1,0 +1,125 @@
+---
+const features = [
+  {
+    title: "Семейное дело",
+    text: "Мы не бездушный завод. Каждая банка проходит через наши руки. Мы знаем историю каждого улья.",
+    icon: "FAMILY"
+  },
+  {
+    title: "Дикая природа",
+    text: "Пасека стоит в глубине лесов Гродненщины. В радиусе 10 км нет трасс и заводов. Только чистый воздух.",
+    icon: "ECO"
+  },
+  {
+    title: "Честный состав",
+    text: "Мы никогда не греем мёд и не кормим пчел сахаром. Вы получаете продукт таким, каким его создали пчелы.",
+    icon: "PURE"
+  }
+];
+---
+
+<section class="relative py-24 bg-[#111] overflow-hidden">
+    
+    <!-- ФОНОВЫЙ ДЕКОР -->
+    <!-- Огромная цифра на фоне для глубины -->
+    <div class="absolute -left-20 top-20 text-[30vw] font-bold font-heading text-white opacity-[0.02] leading-none select-none pointer-events-none">
+        01
+    </div>
+    
+    <div class="container mx-auto px-4 md:px-8 relative z-10">
+        
+        <!-- ЗАГОЛОВОК СЕКЦИИ -->
+        <div class="mb-16 max-w-2xl">
+            <h2 class="text-brand-yellow font-bold tracking-[0.2em] uppercase text-sm mb-4">
+                Философия бренда
+            </h2>
+            <h3 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white uppercase leading-tight">
+                Почему выбирают <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Marmol Honey?</span>
+            </h3>
+        </div>
+
+        <!-- BENTO GRID (СЕТКА) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- ЛЕВАЯ КОЛОНКА (Большое фото/Видео) - Занимает 5 колонок -->
+            <div class="lg:col-span-5 relative group overflow-hidden rounded-2xl min-h-[400px]">
+                <div class="absolute inset-0 bg-gray-800">
+                    <!-- Заглушка, если нет фото. Замени src на фото пасеки/пчеловода! -->
+                    <img 
+                        src="/images/honey-buckwheat/honey-buckwheat-1.png" 
+                        alt="На пасеке" 
+                        class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 scale-100 group-hover:scale-105"
+                    />
+                </div>
+                
+                <!-- Текст поверх фото -->
+                <div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black/90 to-transparent w-full">
+                    <p class="text-white font-heading text-2xl uppercase font-bold mb-2">От сердца к сердцу</p>
+                    <p class="text-gray-400 text-sm">В каждую баночку мы вкладываем частичку души нашей семьи.</p>
+                </div>
+
+                <!-- Декоративная рамка -->
+                <div class="absolute inset-0 border border-white/10 rounded-2xl pointer-events-none"></div>
+            </div>
+
+            <!-- ПРАВАЯ КОЛОНКА (Плитки с фактами) - Занимает 7 колонок -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                
+                {/* Карточка 1 - Длинная (на всю ширину правой колонки) */}
+                <div class="sm:col-span-2 bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:bg-white/10 hover:border-brand-yellow/30 transition-all duration-300 group">
+                    <div class="flex items-start justify-between mb-4">
+                        <h4 class="text-xl font-bold text-white uppercase font-heading">
+                            {features[0].title}
+                        </h4>
+                        <span class="text-brand-yellow font-bold opacity-30 group-hover:opacity-100 transition-opacity">
+                            {features[0].icon}
+                        </span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed max-w-lg">
+                        {features[0].text}
+                    </p>
+                </div>
+
+                {/* Карточка 2 - Маленькая */}
+                <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:bg-white/10 hover:border-brand-yellow/30 transition-all duration-300 group flex flex-col justify-between h-full">
+                    <span class="text-4xl mb-4 opacity-50 grayscale group-hover:grayscale-0 transition-all">🌿</span>
+                    <div>
+                        <h4 class="text-xl font-bold text-white uppercase font-heading mb-3">
+                            {features[1].title}
+                        </h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            {features[1].text}
+                        </p>
+                    </div>
+                </div>
+
+                {/* Карточка 3 - Маленькая (Акцентная) */}
+                <div class="bg-gradient-to-br from-brand-yellow/10 to-brand-yellow/5 border border-brand-yellow/20 p-8 rounded-2xl hover:border-brand-yellow/50 transition-all duration-300 group flex flex-col justify-between h-full">
+                    <span class="text-4xl mb-4 opacity-80">🍯</span>
+                    <div>
+                        <h4 class="text-xl font-bold text-brand-yellow uppercase font-heading mb-3">
+                            {features[2].title}
+                        </h4>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            {features[2].text}
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Кнопка-ссылка внизу -->
+        <div class="mt-12 text-center md:text-left">
+            <a href="/about" class="inline-flex items-center gap-2 text-gray-400 hover:text-brand-yellow transition-colors border-b border-transparent hover:border-brand-yellow pb-1 uppercase text-sm font-bold tracking-widest">
+                Читать полную историю
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</section>

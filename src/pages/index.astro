@@ -1,7 +1,9 @@
 ---
 // src/pages/index.astro
 import Layout from '../layouts/Layout.astro';
-
+import Marquee from '../components/Marquee.astro';
+import AboutSection from '../components/AboutSection.astro'; 
+import Bestsellers from '../components/Bestsellers.astro';
 // Путь к твоему лучшему фото
 const heroImage = "/images/honey-may/honey-may.png"; 
 ---
@@ -97,7 +99,9 @@ const heroImage = "/images/honey-may/honey-may.png";
             </div>
         </div>
     </section>
-
+    <Marquee />
+    <Bestsellers />
+    <AboutSection />
 </Layout>
 
 <style>
