@@ -6,9 +6,9 @@
     "inStock": false,
     "description": "Насыщенный букет середины лета. Собрал в себе ароматы десятков луговых цветов в пике их цветения.",
     "gallery": [
-       "/images/honey-jul-mix/honey-jul-mix-1.png"
+       "/images/honey-jul-mix/honey-jul-mix-1.webp"
     ],
-    "image": "/images/honey-jul-mix/honey-jul-mix.png",
+    "image": "/images/honey-jul-mix/honey-jul-mix.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 10 },
@@ -23,9 +23,9 @@
     "inStock": true,
     "description": "Первый, самый нежный мёд сезона. Легкий, почти прозрачный, с тонкими нотками весенних первоцветов и фруктовых деревьев.",
     "gallery": [
-       "/images/honey-may/honey-may-1.png"
+       "/images/honey-may/honey-may-1.webp"
     ],
-    "image": "/images/honey-may/honey-may.png",
+    "image": "/images/honey-may/honey-may.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 10 },
@@ -40,9 +40,9 @@
     "inStock": true,
     "description": "Темный, тягучий, с глубоким терпким вкусом и хвойными нотками. Впитал в себя силу дикой природы.",
     "gallery": [
-       "/images/honey-forest/honey-forest-1.png"
+       "/images/honey-forest/honey-forest-1.webp"
     ],
-    "image": "/images/honey-forest/honey-forest.png",
+    "image": "/images/honey-forest/honey-forest.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 10 },
@@ -57,9 +57,9 @@
     "inStock": true,
     "description": "Уникальный лесной сорт с нежным ягодным послевкусием. Очень душистый и мягкий.",
     "gallery": [
-       "/images/honey-raspberry/honey-raspberry-1.png"
+       "/images/honey-raspberry/honey-raspberry-1.webp"
     ],
-    "image": "/images/honey-raspberry/honey-raspberry.png",
+    "image": "/images/honey-raspberry/honey-raspberry.webp",
     "badges": ["Новинка"],
     "variants": [
       { "size": "300 г", "price": 10 },
@@ -74,9 +74,9 @@
     "inStock": true,
     "description": "Янтарный мёд с легкой горчинкой и ярким желтым цветом. Быстро густеет, сохраняя полезные свойства.",
     "gallery": [
-       "/images/honey-goldenrod/honey-goldenrod-1.png"
+       "/images/honey-goldenrod/honey-goldenrod-1.webp"
     ],
-    "image": "/images/honey-goldenrod/honey-goldenrod.png",
+    "image": "/images/honey-goldenrod/honey-goldenrod.webp",
     "badges": ["Новинка"],
     "variants": [
       { "size": "300 г", "price": 10 },
@@ -91,9 +91,9 @@
     "inStock": true,
     "description": "Изысканный сорт с едва уловимым ароматом миндаля и зеленоватым оттенком. Настоящая полевая классика Беларуси.",
     "gallery": [
-       "/images/honey-cornflower/honey-cornflower-1.png"
+       "/images/honey-cornflower/honey-cornflower-1.webp"
     ],
-    "image": "/images/honey-cornflower/honey-cornflower.png",
+    "image": "/images/honey-cornflower/honey-cornflower.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 11 },
@@ -108,9 +108,9 @@
     "inStock": true,
     "description": "Благородный темный цвет и узнаваемая перчинка во вкусе. Рекордсмен по содержанию железа и микроэлементов.",
     "gallery": [
-       "/images/honey-buckwheat/honey-buckwheat-1.png"
+       "/images/honey-buckwheat/honey-buckwheat-1.webp"
     ],
-    "image": "/images/honey-buckwheat/honey-buckwheat.png",
+    "image": "/images/honey-buckwheat/honey-buckwheat.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 11 },
@@ -125,10 +125,10 @@
     "inStock": true,
     "description": "Знаменитый 'вересковый мед'. Густой, желеобразный, с сильным ароматом и благородной горчинкой. Гурманский сорт.",
     "gallery": [
-       "/images/honey-heather/honey-heather-1.png", 
-       "/images/honey-heather/honey-heather-2.jpg"
+       "/images/honey-heather/honey-heather-1.webp", 
+       "/images/honey-heather/honey-heather-2.webp"
     ],
-    "image": "/images/honey-heather/honey-heather.png",
+    "image": "/images/honey-heather/honey-heather.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 12 },
@@ -143,9 +143,9 @@
     "inStock": true,
     "description": "Необычный купаж. Сладость липы переплетается с успокаивающими нотками лаванды. Идеален для вечернего чаепития.",
     "gallery": [
-       "/images/honey-linden-lavender/honey-linden-lavender-1.png"
+       "/images/honey-linden-lavender/honey-linden-lavender-1.webp"
     ],
-    "image": "/images/honey-linden-lavender/honey-linden-lavender.png",
+    "image": "/images/honey-linden-lavender/honey-linden-lavender.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 12 },
@@ -160,9 +160,9 @@
     "inStock": true,
     "description": "Жидкое золото. Долго не кристаллизуется, обладает тончайшим вкусом без горечи. Самый гипоаллергенный сорт.",
     "gallery": [
-       "/images/honey-acacia/honey-acacia-1.jpg"
+       "/images/honey-acacia/honey-acacia-1.webp"
     ],
-    "image": "/images/honey-acacia/honey-acacia.png",
+    "image": "/images/honey-acacia/honey-acacia.webp",
     "badges": ["Хит продаж"],
     "variants": [
       { "size": "300 г", "price": 15 },
@@ -177,10 +177,10 @@
     "inStock": true,
     "description": "Цельный отборный фундук в акациевом меду. Классическое сочетание, дающее энергию и насыщенный ореховый вкус.",
     "gallery": [
-       "/images/nut-hazelnut/nut-hazelnut-1.jpg", 
-       "/images/nut-hazelnut/nut-hazelnut-2.jpg"
+       "/images/nut-hazelnut/nut-hazelnut-1.webp", 
+       "/images/nut-hazelnut/nut-hazelnut-2.webp"
     ],
-    "image": "/images/nut-hazelnut/nut-hazelnut.png",
+    "image": "/images/nut-hazelnut/nut-hazelnut.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -194,9 +194,9 @@
     "inStock": true,
     "description": "Полезнейший дуэт для работы мозга. Легкая горчинка грецкого ореха идеально компенсируется сладостью меда.",
     "gallery": [
-       "/images/nut-walnut/nut-walnut-1.jpg"
+       "/images/nut-walnut/nut-walnut-1.webp"
     ],
-    "image": "/images/nut-walnut/nut-walnut.png",
+    "image": "/images/nut-walnut/nut-walnut.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -210,9 +210,9 @@
     "inStock": true,
     "description": "Золотистый обжаренный миндаль залитый прозрачным медом. Изысканный десерт с нотками марципана.",
     "gallery": [
-       "/images/nut-almond/nut-almond-1.jpg"
+       "/images/nut-almond/nut-almond-1.webp"
     ],
-    "image": "/images/nut-almond/nut-almond.png",
+    "image": "/images/nut-almond/nut-almond.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -226,9 +226,9 @@
     "inStock": true,
     "description": "Наш бестселлер. Фундук, миндаль, кедровый и грецкий орех в одной банке. Максимум пользы и вкуса.",
     "gallery": [
-       "/images/nut-mix/nut-mix-1.jpg"
+       "/images/nut-mix/nut-mix-1.webp", "/images/nut-mix/nut-mix-2.webp"
     ],
-    "image": "/images/nut-mix/nut-mix.png",
+    "image": "/images/nut-mix/nut-mix.webp",
     "badges": ["Хит продаж"],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -244,7 +244,7 @@
     "gallery": [
        
     ],
-    "image": "/images/nut-cashew/nut-cashew.png",
+    "image": "/images/nut-cashew/nut-cashew.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -260,7 +260,7 @@
     "gallery": [
 
     ],
-    "image": "/images/nut-pumpkin/nut-pumpkin.png",
+    "image": "/images/nut-pumpkin/nut-pumpkin.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 18 },
@@ -276,7 +276,7 @@
     "gallery": [
 
     ],
-    "image": "/images/nut-cedar/nut-cedar.png",
+    "image": "/images/nut-cedar/nut-cedar.webp",
     "badges": [],
     "variants": [
       { "size": "300 г", "price": 25 },
@@ -292,7 +292,7 @@
     "gallery": [
        
     ],
-    "image": "/images/cream-classic/cream-classic.png",
+    "image": "/images/cream-classic/cream-classic.webp",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -308,7 +308,7 @@
     "gallery": [
 
     ],
-    "image": "/images/cream-perga/cream-perga.png",
+    "image": "/images/cream-perga/cream-perga.webp",
     "badges": ["Суперфуд"],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -324,7 +324,7 @@
     "gallery": [
 
     ],
-    "image": "/images/cream-propolis/cream-propolis.png",
+    "image": "/images/cream-propolis/cream-propolis.webp",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -340,7 +340,7 @@
     "gallery": [
 
     ],
-    "image": "/images/cream-blueberry/cream-blueberry.png",
+    "image": "/images/cream-blueberry/cream-blueberry.webp",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -356,7 +356,7 @@
     "gallery": [
 
     ],
-    "image": "/images/cream-cranberry/cream-cranberry.png",
+    "image": "/images/cream-cranberry/cream-cranberry.webp",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -372,7 +372,7 @@
     "gallery": [
 
     ],
-    "image": "/images/cream-lemon-ginger/cream-lemon-ginger.png",
+    "image": "/images/cream-lemon-ginger/cream-lemon-ginger.webp",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -388,7 +388,7 @@
     "gallery": [
 
     ],
-    "image": "/images/cream-coconut/cream-coconut.png",
+    "image": "/images/cream-coconut/cream-coconut.webp",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -404,7 +404,7 @@
     "gallery": [
 
     ],
-    "image": "/images/cream-honeysuckle/cream-honeysuckle.png",
+    "image": "/images/cream-honeysuckle/cream-honeysuckle.webp",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -420,7 +420,7 @@
     "gallery": [
 
     ],
-    "image": "/images/cream-currant/cream-currant.png",
+    "image": "/images/cream-currant/cream-currant.webp",
     "badges": [],
     "variants": [
       { "size": "270 г", "price": 12 },
@@ -434,10 +434,10 @@
     "inStock": true,
     "description": "«Пчелиный хлеб». Уникальный природный биостимулятор. Лучше усваивается организмом, чем обычная пыльца. Мощная поддержка иммунитета.",
     "gallery": [
-       "/images/bee-perga/bee-perga-1.png", 
-       "/images/bee-perga/bee-perga-2.png"
+       "/images/bee-perga/bee-perga-1.webp", 
+       "/images/bee-perga/bee-perga-2.webp"
     ],
-    "image": "/images/bee-perga/bee-perga.png",
+    "image": "/images/bee-perga/bee-perga.webp",
     "badges": ["Суперфуд"],
     "variants": [
       { "size": "150 г", "price": 20 },
@@ -452,10 +452,10 @@
     "inStock": true,
     "description": "Концентрат солнечной энергии. Содержит все известные витамины и микроэлементы. Заряжает бодростью лучше кофе.",
     "gallery": [
-       "/images/bee-pollen/bee-pollen-1.png", 
-       "/images/bee-pollen/bee-pollen-2.png"
+       "/images/bee-pollen/bee-pollen-1.webp", 
+       "/images/bee-pollen/bee-pollen-2.webp"
     ],
-    "image": "/images/bee-pollen/bee-pollen.png",
+    "image": "/images/bee-pollen/bee-pollen.webp",
     "badges": ["Суперфуд"],
     "variants": [
       { "size": "150 г", "price": 20 },
@@ -472,7 +472,7 @@
     "gallery": [
 
     ],
-    "image": "/images/bee-zabrus/bee-zabrus.png",
+    "image": "/images/bee-zabrus/bee-zabrus.webp",
     "badges": ["Суперфуд"],
     "variants": [
       { "size": "300 г", "price": 15 }
@@ -487,7 +487,7 @@
     "gallery": [
 
     ],
-    "image": "/images/royal-jelly/royal-jelly.png",
+    "image": "/images/royal-jelly/royal-jelly.webp",
     "badges": ["Суперфуд"],
     "variants": [
       { "size": "6 г", "price": 72 }
@@ -500,9 +500,9 @@
     "inStock": true,
     "description": "Эксклюзивный продукт. Нежная текстура крем-меда обогащена мощным маточным молочком.",
     "gallery": [
-       "/images/cream-royal/cream-royal-1.jpg"
+       "/images/cream-royal/cream-royal-1.webp"
     ],
-    "image": "/images/cream-royal/cream-royal.png",
+    "image": "/images/cream-royal/cream-royal.webp",
     "badges": [],
     "variants": [
       { "size": "250 г", "price": 70 }
@@ -517,7 +517,7 @@
     "gallery": [
 
     ],
-    "image": "/images/tea-imperial/tea-imperial.png",
+    "image": "/images/tea-imperial/tea-imperial.webp",
     "badges": [],
     "variants": [
       { "size": "40 г", "price": 10 }
@@ -532,7 +532,7 @@
     "gallery": [
 
     ],
-    "image": "/images/tea-mango-passion/tea-mango-passion.png",
+    "image": "/images/tea-mango-passion/tea-mango-passion.webp",
     "badges": [],
     "variants": [
       { "size": "40 г", "price": 10 }
@@ -547,7 +547,7 @@
     "gallery": [
 
     ],
-    "image": "/images/tea-1001-night/tea-1001-night.png",
+    "image": "/images/tea-1001-night/tea-1001-night.webp",
     "badges": [],
     "variants": [
       { "size": "40 г", "price": 10 }
@@ -562,7 +562,7 @@
     "gallery": [
 
     ],
-    "image": "/images/tea-taiga/tea-taiga.png",
+    "image": "/images/tea-taiga/tea-taiga.webp",
     "badges": ["Польза"],
     "variants": [
       { "size": "40 г", "price": 10 }
@@ -577,7 +577,7 @@
     "gallery": [
 
     ],
-    "image": "/images/tea-black-mojito/tea-black-mojito.png",
+    "image": "/images/tea-black-mojito/tea-black-mojito.webp",
     "badges": [],
     "variants": [
       { "size": "40 г", "price": 10 }
@@ -592,7 +592,7 @@
     "gallery": [
 
     ],
-    "image": "/images/tea-champagne/tea-champagne.png",
+    "image": "/images/tea-champagne/tea-champagne.webp",
     "badges": ["Ароматный"],
     "variants": [
       { "size": "40 г", "price": 10 }
@@ -605,10 +605,10 @@
     "inStock": true,
     "description": "Эстетичная упаковка из березовой фанеры с фирменной гравировкой и удобной крышкой. Идеально подогнана под баночки объемом 300 г.",
     "gallery": [
-       "/images/pack-box-plywood/pack-box-plywood-1.jpg", 
-       "/images/pack-box-plywood/pack-box-plywood-2.jpg"
+       "/images/pack-box-plywood/pack-box-plywood-1.webp", 
+       "/images/pack-box-plywood/pack-box-plywood-2.webp"
     ],
-    "image": "/images/pack-box-plywood/pack-box-plywood.png",
+    "image": "/images/pack-box-plywood/pack-box-plywood.webp",
     "badges": ["Подарок"],
     "variants": [
       { "size": "На 2 банки (300г)", "price": 15 },
@@ -624,10 +624,10 @@
     "inStock": true,
     "description": "Брутальный крафтовый стиль. Массив натурального дуба, покрытый маслом, и ручка из джутового каната. Универсальна: подходит для банок 300 г и 500 г.",
     "gallery": [
-       "/images/pack-basket-oak/pack-basket-oak-1.jpg", 
-       "/images/pack-basket-oak/pack-basket-oak-2.jpg"
+       "/images/pack-basket-oak/pack-basket-oak-1.webp", 
+       "/images/pack-basket-oak/pack-basket-oak-2.webp"
     ],
-    "image": "/images/pack-basket-oak/pack-basket-oak.png",
+    "image": "/images/pack-basket-oak/pack-basket-oak.webp",
     "badges": ["Ручная работа"],
     "variants": [
       { "size": "На 1 банку", "price": 15 },

@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="О нас | Marmol Honey">
+    
+    <!-- 1. HERO BLOCK -->
+    <section class="relative min-h-[60vh] flex items-center justify-center bg-[#111] overflow-hidden">
+        
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+            <span class="text-[25vw] font-black text-white/[0.02] leading-none whitespace-nowrap">
+                SINCE 1980
+            </span>
+        </div>
+        
+        <div class="absolute w-[500px] h-[500px] bg-brand-yellow/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <div class="inline-block mb-6 border border-brand-yellow/30 px-4 py-1 rounded-full bg-brand-yellow/5">
+                <span class="text-brand-yellow text-xs font-bold uppercase tracking-[0.2em]">Семейное дело</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-7xl font-heading font-bold text-white uppercase leading-tight mb-8">
+                Репутация, <br/>
+                проверенная <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-yellow-600">Временем</span>
+            </h1>
+            
+            <p class="text-gray-400 text-lg md:text-xl font-light max-w-2xl mx-auto border-t border-white/10 pt-8 mt-8">
+                Мы делаем так, чтобы редкие виды мёда и польза дикой природы стали доступны каждому. Стабильное качество — наш главный принцип.
+            </p>
+        </div>
+    </section>
+
+    <!-- 2. ИСТОРИЯ ЧЕРЕЗ ЦИФРЫ (Timeline) -->
+    <section class="pt-20 pb-10 px-4 bg-[#141414] border-t border-white/5 relative">
+        <div class="container mx-auto max-w-5xl">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 relative">
+                
+                <!-- Линия по центру -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-brand-yellow/50 to-transparent"></div>
+
+                <!-- Блок 1 -->
+                <div class="md:text-right relative">
+                    <div class="hidden md:block absolute top-0 -right-[41px] w-5 h-5 bg-[#141414] border-2 border-brand-yellow rounded-full z-10"></div>
+                    <span class="text-6xl md:text-8xl font-heading font-bold text-white/10 absolute -top-10 md:right-0 right-auto left-0 md:left-auto -z-10">30</span>
+                    <h2 class="text-2xl font-bold text-white uppercase mb-4 relative z-10">Лет с пчелами</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        Мы дорожим именем, которое создаем уже три десятилетия. Большинство тех, кто попробовал наш мёд однажды, остаются с нами на годы. Для нас это главный показатель: содержимое банки всегда честно соответствует тому, что написано на этикетке.
+                    </p>
+                </div>
+                
+                <div class="hidden md:block"></div>
+                <div class="hidden md:block"></div>
+
+                <!-- Блок 2 -->
+                <div class="md:text-left relative">
+                    <div class="hidden md:block absolute top-0 -left-[41px] w-5 h-5 bg-brand-yellow border-4 border-[#141414] rounded-full z-10 shadow-[0_0_20px_rgba(255,242,0,0.5)]"></div>
+                    <span class="text-6xl md:text-8xl font-heading font-bold text-white/10 absolute -top-10 left-0 -z-10">NEW</span>
+                    <h2 class="text-2xl font-bold text-white uppercase mb-4 relative z-10">Эволюция вкуса</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        Мы сохраняем традиции, но не боимся нового. Благодаря особым технологиям бережного взбивания, мы открыли для наших клиентов натуральный <strong>крем-мёд</strong>. Это возможность оценить вкусовые и лечебные свойства редких сортов в новой, нежной форме.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.5 НОВЫЙ БЛОК: СТАТИСТИКА (То, что мы добавили) -->
+    <section class="pb-20 px-4 bg-[#141414]">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Карточка 1 -->
+                <div class="group bg-[#1A1A1A] p-8 rounded-2xl border border-white/5 hover:border-brand-yellow/30 transition-all duration-300 text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-brand-yellow/5 rounded-full blur-[30px] group-hover:bg-brand-yellow/10 transition-colors"></div>
+                    
+                    <div class="text-4xl lg:text-5xl font-heading font-bold text-brand-yellow mb-2">100+</div>
+                    <div class="text-white font-bold uppercase tracking-widest text-sm mb-4">Пчелосемей</div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Большая пасека — это не просто масштаб, это стабильность качества. Сильные семьи собирают нектар быстрее, создавая густой, зрелый мёд.
+                    </p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="group bg-[#1A1A1A] p-8 rounded-2xl border border-white/5 hover:border-brand-yellow/30 transition-all duration-300 text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-brand-yellow/5 rounded-full blur-[30px] group-hover:bg-brand-yellow/10 transition-colors"></div>
+                    
+                    <div class="text-4xl lg:text-5xl font-heading font-bold text-brand-yellow mb-2">> 1000</div>
+                    <div class="text-white font-bold uppercase tracking-widest text-sm mb-4">Постоянных клиентов</div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Нам доверяют семьи по всей Беларуси. Мы не запускаем громкую рекламу — нас советуют друзьям. Это лучшая оценка нашего труда.
+                    </p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="group bg-[#1A1A1A] p-8 rounded-2xl border border-white/5 hover:border-brand-yellow/30 transition-all duration-300 text-center relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-brand-yellow/5 rounded-full blur-[30px] group-hover:bg-brand-yellow/10 transition-colors"></div>
+                    
+                    <!-- Иконка галочки вместо цифры -->
+                    <div class="flex justify-center mb-3">
+                        <div class="w-12 h-12 rounded-full border-2 border-brand-yellow flex items-center justify-center text-brand-yellow">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-white font-bold uppercase tracking-widest text-sm mb-4">Сертифицировано</div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Работаем официально и открыто. Паспорт пасеки и все необходимые документы в наличии. Безопасность гарантирована.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. БЛОК ЭКОЛОГИЯ -->
+    <section class="py-24 px-4 bg-[#111] overflow-hidden">
+        <div class="container mx-auto max-w-6xl relative">
+            
+            <div class="bg-gradient-to-br from-white/5 to-transparent border border-white/5 rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 relative overflow-hidden">
+                
+                <div class="absolute top-0 right-0 w-[300px] h-[300px] bg-brand-yellow/10 rounded-full blur-[80px]"></div>
+
+                <div class="flex-1 space-y-8 relative z-10">
+                    <h3 class="text-3xl font-heading font-bold text-white uppercase">
+                        Масштаб <span class="text-brand-yellow">Чистоты</span>
+                    </h3>
+                    
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Наша пасека расположена в экологически чистой лесистой местности. Мы не ограничены одним полем — наши пчелы трудятся на огромной территории, чтобы собрать всё разнообразие диких медоносов.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 gap-6 mt-6">
+                        <div class="flex gap-4">
+                            <div class="w-16 h-16 flex items-center justify-center border border-white/20 rounded-full text-brand-yellow font-bold text-xl shrink-0">
+                                50<span class="text-xs">КМ</span>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Радиус сбора</h4>
+                                <p class="text-gray-400 text-sm">Охват территории наших пчел.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-16 h-16 flex items-center justify-center border border-white/20 rounded-full text-brand-yellow font-bold text-xl shrink-0">
+                                100%
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Натуральность</h4>
+                                <p class="text-gray-400 text-sm">Гарантия качества каждой капли.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex-1 relative flex justify-center">
+                    <div class="absolute inset-0 bg-brand-yellow/20 blur-[60px] rounded-full animate-pulse"></div>
+                    <img 
+                        src="/images/bee-zabrus/bee-zabrus.webp" 
+                        alt="Marmol Jar" 
+                        class="relative w-64 md:w-80 object-contain drop-shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-700"
+                    />
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. ФИНАЛ -->
+    <section class="py-20 px-4 border-t border-white/5 bg-[#161618]">
+        <div class="container mx-auto text-center">
+            <h2 class="text-white text-lg font-light mb-10 tracking-widest uppercase">Наша география</h2>
+            <div class="text-[12vw] md:text-[8vw] font-black font-heading text-white/5 leading-none select-none tracking-tighter">
+                GRODNO
+            </div>
+            <div class="-mt-4 md:-mt-8 relative z-10">
+                <a href="/catalog" class="inline-block px-10 py-4 bg-brand-yellow text-brand-dark font-bold font-heading uppercase tracking-widest rounded hover:bg-white transition-colors shadow-[0_0_30px_rgba(255,242,0,0.2)]">
+                    Попробовать мёд
+                </a>
+            </div>
+        </div>
+    </section>
+
+</Layout>

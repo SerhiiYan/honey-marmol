@@ -4,7 +4,7 @@ import products from '../data/products.json';
 // ВАЖНО: Порядок имеет значение.
 // 1-й ID будет Большим Хитом (слева).
 // 2-й и 3-й будут справа.
-const bestsellersIds = ['nut-mix', 'honey-acacia', 'cream-blueberry'];
+const bestsellersIds = ['nut-mix', 'honey-acacia', 'honey-raspberry'];
 
 const items = products.filter(p => bestsellersIds.includes(p.id));
 // Сортируем их в том порядке, в котором они указаны в массиве bestsellersIds
