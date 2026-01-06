@@ -1,0 +1,187 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Доставка и Оплата | Marmol Honey">
+    
+    <!-- ЗАГОЛОВОК -->
+    <section class="relative pt-32 pb-12 px-4 bg-[#111]">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-heading font-bold text-white uppercase mb-4">
+                Доставка
+            </h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                Мы находимся в Гродно, но отправляем наш мёд в любую точку Беларуси.
+            </p>
+        </div>
+    </section>
+
+    <!-- СЕТКА С УСЛОВИЯМИ -->
+    <section class="pb-20 px-4 bg-[#111]">
+        <div class="container mx-auto max-w-6xl">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                
+                <!-- 1. ДОСТАВКА ПО ГРОДНО (Большая карточка слева) -->
+                <div class="bg-[#1A1A1A] border border-white/5 rounded-3xl p-8 md:p-12 relative overflow-hidden group">
+                    <!-- Декор на фоне -->
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-yellow/5 rounded-full blur-[50px] group-hover:bg-brand-yellow/10 transition-colors"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 bg-brand-yellow text-brand-dark rounded-full flex items-center justify-center">
+                                <!-- Иконка Домика/Города -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                            </div>
+                            <h2 class="text-2xl md:text-3xl font-heading font-bold text-white uppercase">По Гродно</h2>
+                        </div>
+
+                        <!-- Список цен -->
+                        <div class="space-y-6">
+                            <!-- Вариант 1 -->
+                            <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                                <span class="text-gray-300">Октябрьский район</span>
+                                <span class="text-xl font-bold text-white">5 BYN</span>
+                            </div>
+                            
+                            <!-- Вариант 2 -->
+                            <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                                <span class="text-gray-300">Ленинский район</span>
+                                <span class="text-xl font-bold text-white">10 BYN</span>
+                            </div>
+
+                            <!-- Вариант 3: Бесплатно -->
+                            <div class="bg-white/5 rounded-xl p-4 border border-brand-yellow/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
+                                <div class="text-gray-300 text-sm">
+                                    При заказе на сумму<br>
+                                    <span class="text-white font-bold">от 50 BYN</span>
+                                </div>
+                                <div class="text-brand-yellow font-bold uppercase tracking-wider border border-brand-yellow px-3 py-1 rounded text-sm">
+                                    Бесплатно
+                                </div>
+                            </div>
+
+                            <!-- Вариант 4: Такси -->
+                            <div class="flex items-start gap-3 mt-4">
+                                <div class="mt-1 w-2 h-2 rounded-full bg-brand-yellow shrink-0"></div>
+                                <p class="text-gray-400 text-sm">
+                                    <strong class="text-white">Яндекс Такси:</strong> отправляем по их тарифам (для срочных заказов).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ПРАВАЯ КОЛОНКА -->
+                <div class="flex flex-col gap-6">
+                    
+                    <!-- 2. ПО БЕЛАРУСИ (Европочта/Белпочта) -->
+                    <div class="bg-[#1A1A1A] border border-white/5 rounded-3xl p-8 flex-1 relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-blue-500/10 rounded-full blur-[40px] group-hover:bg-blue-500/20 transition-colors"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-12 h-12 bg-white/10 text-white rounded-full flex items-center justify-center">
+                                    <!-- Иконка Коробки -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                                    </svg>
+                                </div>
+                                <h2 class="text-2xl font-heading font-bold text-white uppercase">По Беларуси</h2>
+                            </div>
+
+                            <ul class="space-y-4 text-gray-300">
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-brand-yellow">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                    </svg>
+                                    <span>Отправка <strong>Белпочтой</strong> или <strong>Европочтой</strong></span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-brand-yellow">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span>Минимальный заказ — <strong class="text-white">20 BYN</strong></span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-brand-yellow">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                                    </svg>
+                                    <span>Оплата товара <strong>при получении</strong></span>
+                                </li>
+                            </ul>
+
+                            <div class="mt-6 pt-4 border-t border-white/10 text-xs text-gray-500 flex items-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 shrink-0">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                                </svg>
+                                <p>Не забудьте паспорт для получения посылки. Стоимость доставки — согласно тарифам почты.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. САМОВЫВОЗ -->
+                    <div class="bg-[#1A1A1A] border border-white/5 rounded-3xl p-8 relative group overflow-hidden">
+                        <div class="relative z-10 flex items-center justify-between">
+                            <div>
+                                <div class="text-gray-400 text-sm uppercase tracking-widest font-bold mb-1">Самовывоз</div>
+                                <div class="text-2xl font-bold text-white mb-2">мкр. Южный-4</div>
+                                <div class="text-brand-yellow text-sm font-medium flex items-center gap-2">
+                                    <span>Бесплатно</span>
+                                    <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
+                                    <span class="text-gray-400 font-normal">По предварительному звонку</span>
+                                </div>
+                            </div>
+                            
+                            <!-- ССЫЛКА НА ЯНДЕКС КАРТЫ -->
+                            <a 
+                                href="https://yandex.by/maps/10274/grodno/?text=Гродно%20микрорайон%20Южный-4" 
+                                target="_blank"
+                                class="w-14 h-14 border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-brand-yellow hover:text-black hover:border-brand-yellow transition-all shadow-[0_0_15px_rgba(255,255,255,0.05)]"
+                                title="Построить маршрут"
+                            >
+                                <!-- Иконка навигации -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Уточнить детали -->
+            <div class="mt-16 text-center">
+                <p class="text-gray-500 mb-6 font-medium">Остались вопросы или хотите заказать индивидуальную доставку?</p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    
+                    <!-- Кнопка INSTAGRAM -->
+                    <!-- ЗАМЕНИ 'marmol_honey' НА СВОЙ НИКНЕЙМ -->
+                    <a href="https://instagram.com/marmol_honey" target="_blank" class="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-yellow/50 transition-all group w-full sm:w-auto justify-center">
+                        <!-- Иконка Instagram -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-pink-500 transition-colors"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        <span class="text-white group-hover:text-white transition-colors font-bold tracking-wide">Instagram</span>
+                    </a>
+
+                    <!-- Кнопка TELEGRAM -->
+                    <!-- ЗАМЕНИ 'username' НА СВОЙ НИК -->
+                    <a href="https://t.me/Ninulia81" target="_blank" class="flex items-center gap-3 px-6 py-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-yellow/50 transition-all group w-full sm:w-auto justify-center">
+                        <!-- Иконка Telegram -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-400 group-hover:text-blue-400 transition-colors"><path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-4.212 1.61-2.991 2.7.285 3.24.626.103 1.025.18 1.212.22l.775.148c4.43 1.365 3.385 2.582 2.49 4.3l-.717 2.052a2.44 2.44 0 0 0 .616 2.41 2.41 2.41 0 0 0 1.954.72c.813.003 1.343-.377 1.95-.917l2.427-2.126c1.192 1.332 2.766 2.463 3.663 3.03.882.556 1.83.992 2.827.675 1.765-.56 2.516-3.793 3.616-8.597 1.472-6.425.688-9.927.467-10.426a2.38 2.38 0 0 0-1.764-1.22l-.121-.005Z"/></svg>
+                        <span class="text-white group-hover:text-white transition-colors font-bold tracking-wide">Telegram</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</Layout>

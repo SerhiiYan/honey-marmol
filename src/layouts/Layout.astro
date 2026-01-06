@@ -1,8 +1,9 @@
 ---
 // src/layouts/Layout.astro
 import '../styles/global.css';
-import CartWidget from '../components/CartWidget.jsx';
-import CartFlyout from '../components/CartFlyout.jsx';
+import Header from '../components/Header.astro'; // <--- Новая Шапка
+import Footer from '../components/Footer.astro'; // <--- Новый Футер
+import CartFlyout from '../components/CartFlyout.jsx'; // Корзина (уже была)
 
 interface Props {
 	title: string;
@@ -24,41 +25,19 @@ const { title, description = "Авторский мёд ручной работ�
 	</head>
 	<body class="bg-brand-dark text-white min-h-screen flex flex-col">
         
-        <!-- Шапка (Header) - Сделаем её липкой -->
-        <header class="sticky top-0 z-50 w-full border-b border-white/10 bg-brand-dark/80 backdrop-blur-md">
-            <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-                
-                <!-- Логотип (Слева) -->
-                <a href="/" class="flex flex-col leading-none uppercase font-heading font-bold text-xl tracking-tighter hover:opacity-80 transition">
-                    Marmol
-                    <span class="text-brand-yellow text-sm">Honey</span>
-                </a>
+        <!-- ШАПКА -->
+        <Header />
 
-                <!-- Навигация (Центр - скрыта на мобильных) -->
-                <nav class="hidden md:flex gap-8 text-sm font-medium tracking-wide text-gray-300">
-                    <a href="/" class="hover:text-brand-yellow transition-colors">Главная</a>
-                    <a href="/catalog" class="hover:text-brand-yellow transition-colors">Каталог</a>
-                    <a href="/about" class="hover:text-brand-yellow transition-colors">О нас</a>
-                </nav>
+        <!-- ОСНОВНОЙ КОНТЕНТ (Сдвигаем вниз на высоту шапки, чтобы не перекрывался) -->
+        <main class="flex-grow"> 
+            <slot /> 
+        </main>
 
-                <!-- Корзина (Справа) -->
-                <div>
-                    <!-- client:load говорит Astro, что этот компонент нужно оживить JS-ом сразу -->
-                    <CartWidget client:load />
-                </div>
+        <!-- ПОДВАЛ -->
+        <Footer />
 
-            </div>
-        </header>
+        <!-- ШТОРКА КОРЗИНЫ -->
+        <CartFlyout client:only="react" />
 
-        <!-- Контент страницы -->
-		<main class="flex-grow">
-			<slot /> 
-		</main>
-
-        <!-- Футер -->
-        <footer class="border-t border-white/10 py-8 text-center text-gray-500 text-sm">
-            © 2025 Marmol Honey. Все права защищены.
-        </footer>
-        <CartFlyout client:load />
 	</body>
 </html>

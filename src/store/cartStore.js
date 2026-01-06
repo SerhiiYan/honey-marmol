@@ -1,15 +1,23 @@
-// src/store/cartStore.js
 import { atom, computed } from 'nanostores';
+import { persistentAtom } from '@nanostores/persistent'; // 1. Импортируем persistentAtom
 
+// Состояние открытия корзины (это сохранять не обязательно, пусть закрывается при обновлении)
 export const isCartOpen = atom(false);
-export const cartItems = atom([]);
+
+// 2. ЗАМЕНЯЕМ ОБЫЧНЫЙ atom НА persistentAtom
+// 'marmol_cart' - это ключ (имя), под которым данные будут лежать в браузере
+export const cartItems = persistentAtom('marmol_cart', [], {
+  encode: JSON.stringify, // Превращаем массив в строку перед сохранением
+  decode: JSON.parse      // Превращаем строку обратно в массив при чтении
+});
+
+// --- ВСЯ ОСТАЛЬНАЯ ЛОГИКА ОСТАЕТСЯ ПРЕЖНЕЙ ---
 
 // Добавление товара
 export function addCartItem(product, count = 1) {
   const existingEntry = cartItems.get().find(item => item.id === product.id && item.variant.size === product.variant.size);
   
   if (existingEntry) {
-    // Если товар есть, прибавляем count к текущему количеству
     cartItems.set(
       cartItems.get().map(item => 
         (item.id === product.id && item.variant.size === product.variant.size)
@@ -18,7 +26,6 @@ export function addCartItem(product, count = 1) {
       )
     );
   } else {
-    // Если товара нет, создаем запись с quantity: count
     cartItems.set([...cartItems.get(), { ...product, quantity: count }]);
   }
 }
@@ -30,15 +37,7 @@ export function removeCartItem(itemId, itemSize) {
   );
 }
 
-// Подсчет общей суммы (Computed - вычисляется сама)
-export const cartTotal = computed(cartItems, items => {
-  return items.reduce((acc, item) => acc + (item.price * item.quantity), 0);
-});
-
-export function clearCart() {
-  cartItems.set([]); // Просто превращаем массив в пустой
-}
-
+// Увеличить на 1
 export function increaseItem(itemId, itemSize) {
   const items = cartItems.get();
   cartItems.set(
@@ -51,13 +50,12 @@ export function increaseItem(itemId, itemSize) {
   );
 }
 
-// Уменьшить на 1 (если ставит 1, то не удаляет, а останавливается на 1)
+// Уменьшить на 1
 export function decreaseItem(itemId, itemSize) {
   const items = cartItems.get();
   cartItems.set(
     items.map(item => {
       if (item.id === itemId && item.variant.size === itemSize) {
-        // Не даем уйти в ноль или минус
         const newQuantity = item.quantity - 1 > 0 ? item.quantity - 1 : 1;
         return { ...item, quantity: newQuantity };
       }
@@ -65,3 +63,13 @@ export function decreaseItem(itemId, itemSize) {
     })
   );
 }
+
+// Полная очистка
+export function clearCart() {
+  cartItems.set([]);
+}
+
+// Подсчет общей суммы
+export const cartTotal = computed(cartItems, items => {
+  return items.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+});

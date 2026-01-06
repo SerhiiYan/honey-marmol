@@ -5,6 +5,7 @@ dist/
 
 # dependencies
 node_modules/
+public/config.php
 
 # logs
 npm-debug.log*

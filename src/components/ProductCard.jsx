@@ -66,7 +66,9 @@ export default function ProductCard({ product }) {
                 src={product.image} 
                 alt={product.name} 
                 style={{ viewTransitionName: `image-${product.id}` }}
-                // Если нет в наличии - убираем увеличение при наведении
+                // ДОБАВЛЯЕМ ВОТ ЭТИ ДВЕ СТРОЧКИ:
+                loading="lazy" 
+                decoding="async"
                 className={`h-full object-contain drop-shadow-xl transition-transform duration-500 
                     ${isOutOfStock ? 'opacity-80' : 'group-hover:scale-110'}
                 `}
